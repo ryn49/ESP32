@@ -1,3 +1,6 @@
+#Voglio controllare la temperatura esterna con PyPico
+#utilizzo il software Thonny su KDE Neon
+
 from machine import ADC
 from utime import sleep
 
@@ -9,6 +12,7 @@ while True:
     temperature = 27 - (voltage - 0.706) / 0.001721
 
     slep +=1
+    
     print(f"{step} - {temperature}")    
     sleep(1)
 
